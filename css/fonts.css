@@ -1,0 +1,63 @@
+@font-face {
+   font-family: 'Play';
+
+   src: url('../fonts/Play/playregular.ttf') format('embedded-opentype'),
+   url('../fonts/Play/playregular.woff') format('woff'),
+   url('../fonts/Play/playregular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'Rub';
+   src: url('../fonts/Rub/rouble-webfont.eot');
+   src: url('../fonts/Rub/rouble-webfont.woff?#iefix') format('embedded-opentype'),
+   url('../fonts/Rub/rouble-webfont.woff') format('woff'),
+   url('../fonts/Rub/rouble-webfont.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'PlayBold';
+   src: url('../fonts/PlayBold/Play-Bold.eot');
+   src: url('../fonts/PlayBold/Play-Bold.woff?#iefix') format('embedded-opentype'),
+   url('../fonts/PlayBold/Play-Bold.woff') format('woff'),
+   url('../fonts/PlayBold/Play-Bold.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'RobotoBlack';
+   src: url('../fonts/RobotoBlack/Roboto-Black.eot');
+   src: url('../fonts/RobotoBlack/Roboto-Black.woff?#iefix') format('embedded-opentype'),
+   url('../fonts/RobotoBlack/Roboto-Black.woff') format('woff'),
+   url('../fonts/RobotoBlack/Roboto-Black.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'RobotoLight';
+   src: url('../fonts/RobotoLight/Roboto-Light.eot');
+   src: url('../fonts/RobotoLight/Roboto-Light.woff?#iefix') format('embedded-opentype'),
+   url('../fonts/RobotoLight/Roboto-Light.woff') format('woff'),
+   url('../fonts/RobotoLight/Roboto-Light.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'RobotoRegular';
+   src: url('../fonts/RobotoRegular/Roboto-Regular.eot');
+   src: url('../fonts/RobotoRegular/Roboto-Regular.woff?#iefix') format('embedded-opentype'),
+   url('../fonts/RobotoRegular/Roboto-Regular.woff') format('woff'),
+   url('../fonts/RobotoRegular/Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'UniSansHeavyCAPS';
+   src: url('../fonts/UniSansHeavyCaps/UniSansHeavyCAPS.eot');
+   src: url('../fonts/UniSansHeavyCaps/UniSansHeavyCAPSf?#iefix') format('embedded-opentype'),
+   url('../fonts/UniSansHeavyCaps/UniSansHeavyCAPS.woff') format('woff'),
+   url('../fonts/UniSansHeavyCaps/UniSansHeavyCAPS.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
