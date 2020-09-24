@@ -1027,7 +1027,6 @@ body.touch .arrow {
    background-color: #fff;
    border: 2px solid #098494;
    z-index: 3;
-
 }
 nav ul li {
    padding: 20px;
@@ -1055,54 +1054,6 @@ main{
 }
 .main.active {
    min-height: 1200px;
-}
-.search {
-   display: flex;
-   flex-direction: column;
-   margin: 0px 0px 25px 0px;
-   position: relative;
-   max-width: 100%;
-}
-.search__area {
-   display: flex;
-}
-.search__text.active:hover .search__list {
-   display: block;
-}
-.search__body {
-   width: 100%;
-   display: flex;
-   border: 1px solid rgb(243, 243, 243);
-   border-right: 0px;
-   height: 40px;
-}
-.search__left {
-   background-color: rgba(243, 243, 243, 1);
-   display: flex;
-   justify-content: space-around;
-   width: 120px;
-   font-family: "RobotoLight";
-   font-size: 15px;
-   padding: 12px 0px 12px 0px;
-   cursor: pointer;
-}
-.search__left object {
-}
-.search__arrow {
-   height: 10px;
-}
-.search__arrow img {
-   vertical-align: middle;
-}
-.search__arrow.active img {
-   transform: rotate(180deg);
-}
-.search__icon {
-   background-image: url("../image/searchmain.png");
-   position: relative;
-   background-repeat: no-repeat;
-   padding-left: 17px;
-   top: -1px;
 }
 .search__text {
    display: flex;
@@ -1208,23 +1159,18 @@ main{
 .item__text_s a:hover {
    color: rgba(246, 128, 56, 1);
 }
-.search__middle {
-   width: 80%;
-   height: 40px;
+.search__menu {
+   display: flex;
+   overflow: hidden;
 }
 .search__field {
-   width: 100%;
    height: 40px;
    border: 0px;
    background-color: rgba(243, 243, 243, 0);
    color: rgba(153, 153, 153, 1);
    padding: 0px 10px;
-}
-.search__right {
-   position: relative;
-   height: 38px;
-   left: 0;
-   border: 0px solid rgba(246, 128, 56, 1);
+   overflow: hidden;
+   flex: 1 1;
 }
 .search__button {
    background-color: rgba(246, 128, 56, 1);
@@ -1235,6 +1181,71 @@ main{
    font-size: 12px;
    text-transform: uppercase;
    letter-spacing: 0.7px;
+}
+.search-page__title{
+   display: inline-block;
+   padding: 0px 0px 0px 5px;
+}
+.search-page__title span:last-child {
+   display: none;
+   border-bottom: 1px dotted
+}
+.search-page__title._categories span {
+   display: none;
+   border-bottom: 1px dotted
+}
+.search-page__title._categories.search-page__title span:last-child {
+   display: inline-block;
+}
+.search-page__title:before {
+   content: '';
+   background: url("../image/searchmain.png") no-repeat left;
+   padding-left: 17px;
+}
+.search-page__title span{
+   margin: 0px 5px;
+}
+.search__arrow.active img{
+   transform: rotate(180deg);
+}
+.search {
+   display: flex;
+   flex-direction: column;
+   margin: 0px 0px 25px 0px;
+   position: relative;
+   max-width: 100%;
+}
+.search__area {
+   display: flex;
+}
+.search__text.active:hover .search__list {
+   display: block;
+}
+.search__body {
+   width: 100%;
+   border: 1px solid rgb(243, 243, 243);
+   border-right: 0px;
+   height: 40px;
+}
+.search__left {
+   background-color: rgba(243, 243, 243, 1);
+   font-family: "RobotoLight";
+   font-size: 15px;
+   padding: 12px 0px;
+   cursor: pointer;
+   float: left;
+   min-width: 90px;
+   display: inline-block;
+}
+.search__arrow {
+   display: inline-block;
+   margin: 0px 10px 0px 0px;
+}
+.search__arrow img {
+   vertical-align: middle;
+}
+.search__arrow.active img {
+   transform: rotate(180deg);
 }
 .news__title {
    font-family: "UniSansHeavyCAPS";
@@ -1431,20 +1442,6 @@ main{
 }
 .checkbox__input:checked ~ .checkbox__text {
    color: #f68038;
-}
-.search-page__title{
-   display: block;
-}
-.search-page__title span:last-child {
-   display: none;
-   border-bottom: 1px dotted
-}
-.search-page__title._categories span {
-   display: none;
-   border-bottom: 1px dotted
-}
-.search-page__title._categories.search-page__title span:last-child {
-   display: block;
 }
 .mobile-window {
    box-shadow: -25px -3px 28px -37px #000000 inset;
@@ -2169,7 +2166,7 @@ display: block;
    font-size: 14px;
    color: #1ab9ce;
    padding-top: 5px;
-   padding-left: 70px;
+   margin-left: 70px;
    cursor: pointer;
 }
 .review__text.active{
@@ -2348,12 +2345,9 @@ display: block;
 @media (max-width: 768px) {
    .main {
       max-width: 100%;
-   }
-   .main{
       min-height: 1250px;
-   }
-   .search__middle {
-      width: 100%;
+      margin: 0px !important;
+      padding: 0px 5px;
    }
    .header__burger {
       display: none;
@@ -2437,7 +2431,7 @@ display: block;
       margin: 0px 10px 0px 0px;
       top: 15px;
    }
-   .search__icon {
+   .search-page__title:before {
       display: none;
    }
    .header {
@@ -2457,7 +2451,6 @@ display: block;
       display: none;
    }
    .container {
-      margin: 0px;
       padding: 0;
    }
    .contacts__image{
