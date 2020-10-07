@@ -72,12 +72,12 @@ h6 {
 input[type='number'] {
    -moz-appearance:textfield;
 }
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
    -webkit-appearance: none;
 }
 .wrapper {
+   overflow: hidden;
    min-height: 100%;
 }
 .content {
@@ -2033,6 +2033,7 @@ main{
 .tabs>input {
    display: none;
    position: absolute;
+   transition: all 0.3s ease 0s;
 }
 /* Стили переключателей вкладок (табов) */
 .tabs>label {
@@ -2069,6 +2070,7 @@ cursor: pointer;
 .tabs>input:checked+label {
    color: #fff;
    background: #F68038;
+   transition: all 0.3s ease 0s;
 }
 /* Активация секций с помощью псевдокласса :checked */
 #tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4, #tab5:checked~#content-tab5 {
@@ -2155,6 +2157,7 @@ display: block;
    height: 98px;
    overflow: hidden;
    padding-top: 10px;
+   transition: all 0.3s ease 0s;
 }
 .review__text-body:before {
    content: '"';
@@ -2163,6 +2166,7 @@ display: block;
    font-size: 100px;
    padding: 0px 0px 0px 10px;
    color: #dadada;
+   transition: all 0.3s ease 0s;
 }
 .review__read-all {
    font-family: 'RobotoLight';
@@ -2171,8 +2175,10 @@ display: block;
    padding-top: 5px;
    margin-left: 70px;
    cursor: pointer;
+   transition: all 1s ease 0s;
 }
 .review__text.active{
+   transition: all 0.3s ease 0s;
    height: auto;
 }
 .review:hover .review__person {
@@ -2186,6 +2192,7 @@ display: block;
 }
 .review:hover .review__main{
    background: #1ab9ce;
+   transition: all 0.3s ease 0s;
 }
 .review:hover .review__read-all{
    color: #64deee !important;
@@ -2460,6 +2467,7 @@ display: block;
       display: none;
    }
    .container {
+      max-width: 100%;
       padding: 0;
    }
    .contacts__image{
@@ -2621,6 +2629,14 @@ display: block;
 @media(max-width: 300px) {
    .info-area__text {
       width: 70px !important;
+   }
+}
+@media(min-width: 769px) {
+   .mobile-window {
+      display: none;
+   }
+   .content.active {
+      left: 0;
    }
 }
 
