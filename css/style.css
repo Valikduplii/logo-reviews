@@ -778,7 +778,7 @@ body.lock {
    position: relative;
    background-image: url("../image/catalog.jpg");
    color: #fff;
-   background-color: rgba(87, 204, 219, 1);
+   background-color: #019DB3;
 }
 .left__flex_main{
    position: absolute;
@@ -877,6 +877,9 @@ nav ul li a {
    text-decoration: none;
    display: inline-block;
    width: 180px;
+}
+.menu {
+   display: block;
 }
 .menu.close {
    display: none;
@@ -2288,6 +2291,12 @@ display: block;
    .main {
       margin: 0px 0px 0px 275px;
    }
+   .header__list a:hover {
+      padding: 5px 5px
+   }
+   .header__list ul {
+      padding: 25px 0px 0px 0px;
+  }
    .registration__row-image {
       display: none;
    }
